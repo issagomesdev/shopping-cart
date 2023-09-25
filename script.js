@@ -335,12 +335,12 @@ function setInfoProduct(product) {
       photos.append(right);
       document.querySelector('button#left').addEventListener('click', function() {
         const scrollingDiv = document.querySelector('.gallery');
-        scrollingDiv.scrollLeft -= 50; // Quantidade de pixels para rolar para a esquerda
+        scrollingDiv.scrollLeft -= 50; 
       });
       
       document.querySelector('button#right').addEventListener('click', function() {
         const scrollingDiv = document.querySelector('.gallery');
-        scrollingDiv.scrollLeft += 50; // Quantidade de pixels para rolar para a direita
+        scrollingDiv.scrollLeft += 50; 
       });
       isbigger = true
   } 
