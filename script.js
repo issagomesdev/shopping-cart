@@ -256,6 +256,7 @@ function setInfoProduct(product) {
   const imgs = product.images.map(function (image) {
     const img = document.createElement("img");
     img.src = image;
+    img.setAttribute("draggable", "false")
     img.addEventListener("click", () => {
       const featuredImage = document.querySelector(".featured");
       const img = featuredImage.querySelector("img");
@@ -265,6 +266,8 @@ function setInfoProduct(product) {
   });
 
   const gallery = document.createElement("div");
+  const left = document.createElement("button");
+  const right = document.createElement("button");
   const featured = document.createElement("div");
   const featuredImg = document.createElement("img");
   featuredImg.src = product.images[0];
@@ -289,6 +292,16 @@ function setInfoProduct(product) {
   infos.classList.add("infos");
   close.classList.add("close-info");
   gallery.classList.add("gallery");
+  left.classList.add("scroll");
+  left.classList.add("fa-solid");
+  left.classList.add("fa-circle-chevron-left");
+  left.classList.add("fa-xl");
+  left.id = "left"
+  right.classList.add("scroll");
+  right.classList.add("fa-solid");
+  right.classList.add("fa-circle-chevron-right");
+  right.classList.add("fa-xl");
+  right.id = "right"
   featured.classList.add("featured");
   photos.classList.add("photos");
   info.classList.add("info");
@@ -297,7 +310,6 @@ function setInfoProduct(product) {
   sales.classList.add("sales");
   info_description.classList.add("info-description");
   info_add_to_cart.classList.add("info-add_to_cart");
-
   info_name.append(info_name_text);
   info_description.append(info_description_text);
   info_price.append(info_price_text);
@@ -315,6 +327,30 @@ function setInfoProduct(product) {
   infos.append(photos);
   infos.append(info);
   contentDiv.append(infos);
+
+  let isbigger = false
+  setInterval(() => {
+    if (gallery.scrollWidth > gallery.offsetWidth && !isbigger) {
+      photos.append(left);
+      photos.append(right);
+      document.querySelector('button#left').addEventListener('click', function() {
+        const scrollingDiv = document.querySelector('.gallery');
+        scrollingDiv.scrollLeft -= 50; // Quantidade de pixels para rolar para a esquerda
+      });
+      
+      document.querySelector('button#right').addEventListener('click', function() {
+        const scrollingDiv = document.querySelector('.gallery');
+        scrollingDiv.scrollLeft += 50; // Quantidade de pixels para rolar para a direita
+      });
+      isbigger = true
+  } 
+  
+  if(gallery.scrollWidth <= gallery.offsetWidth && isbigger){
+    document.querySelector('button#left').remove();
+    document.querySelector('button#right').remove();
+    isbigger = false
+  }
+  }, 500);
 
   close.addEventListener("click", () => {
     infos.remove();
