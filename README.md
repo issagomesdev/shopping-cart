@@ -1,8 +1,61 @@
-# Shopping cart by issa
-One more project to add to my frontend portfolio, a responsive, interactive and dynamic shopping cart. To add a product, just click on the cart in the left corner, if it has already been added +1 is sumed in to your quantity avoiding duplication, in the right corner there is another button in the shape of an ''i'', click on it if you want to receive more information from the product and take a look at its photo gallery. In the cart you can control the amount of products added, delete a product if you want or clear the entire cart at once, in addition, you can have an idea of the total price and the quantity of items in the cart.
+# 🛒 Shopping Cart — Interactive Product Showcase
 
-link preview: https://codedbyissa.github.io/shopping-cart/
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-![image](https://user-images.githubusercontent.com/71194114/214157890-7388db33-21ef-48da-9ca4-3a6ac38ee3c7.png) ![image](https://user-images.githubusercontent.com/71194114/214158178-72a161bc-22a7-4de2-80ac-0e67fc284a4a.png) ![image](https://user-images.githubusercontent.com/71194114/214158011-af20d2cd-c75a-44e3-8573-c97bdd5698de.png)
+![Preview](https://shopping-cart.byissa.tech/products/preview.png)
 
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#features">Features</a> •
+  <a href="#structure">Structure</a> •
+  <a href="#technologies">Technologies</a> •
+  <a href="#how_to_use">How to Use</a>
+</p>
 
+<h2 id="about">📌 About</h2>
+
+**Shopping Cart** is a responsive and dynamic frontend-only shopping experience, created as part of a portfolio project. It allows users to interact with a product list, simulate a shopping experience, and view product galleries in an elegant modal layout.
+
+This project demonstrates DOM manipulation, modular CSS, dynamic UI updates, and image gallery interaction — all without external libraries.
+
+[![project](https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project)](https://shopping-cart.byissa.tech)
+
+<h2 id="features">✨ Features</h2>
+
+- 🛍 Add items to cart with quantity control (no duplication)
+- ➕ Automatic quantity increase when re-adding an existing product
+- 🧾 View product details with image gallery
+- 🗑 Remove individual items or clear entire cart
+- 🧮 See total price and number of items in cart
+- 📱 Fully responsive layout for desktop and mobile
+
+<h2 id="structure">📁 Structure</h2>
+
+```txt
+🛒 shopping-cart/
+├─ ✂ index.html                # Main page
+├─ ✂ style.css                 # Global styles
+├─ ✂ script.js                 # Application logic
+📂 products/                   # Products images and gallery
+ ├─ ...                     
+ └─ 📂 images/                 # Products gallery
+    └─ ...                 
+```
+
+<h2 id="technologies">🧪 Technologies</h2>
+
+- HTML5
+- CSS3
+- JavaScript
+
+No dependencies. Everything runs in the browser.
+
+<h2 id="how_to_use">🚀 How to Use</h2>
+
+1. Open `index.html` in your browser to access the landing page.  
+2. Click the 🛒 icon on a product to add it to the cart.  
+3. Click the ℹ️ icon on a product to view more details and browse its image gallery.  
+4. In the cart, update quantities, remove individual items, or clear all at once.  
+5. The total price and item count update dynamically as you make changes.
