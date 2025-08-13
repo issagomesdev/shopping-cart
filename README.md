@@ -4,7 +4,7 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-![Preview](https://shopping-cart.byissa.tech/products/preview.png)
+![Preview](https://shopping-cart.byissa.dev/products/preview.png)
 
 <p align="center">
   <a href="#about">About</a> •
@@ -20,7 +20,7 @@
 
 This project demonstrates DOM manipulation, modular CSS, dynamic UI updates, and image gallery interaction — all without external libraries.
 
-[![project](https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project)](https://shopping-cart.byissa.tech)
+[![project](https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project)](https://shopping-cart.byissa.dev)
 
 <h2 id="features">✨ Features</h2>
 
